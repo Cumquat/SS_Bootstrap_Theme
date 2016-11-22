@@ -1,5 +1,5 @@
 
 ## Description
-Base Boostrap 3 Theme for Silverstripe
+Base Bootstrap 3 Theme for Silverstripe
 
 
