@@ -1,0 +1,13 @@
+/* Page links */
+.page {
+  p {
+    a {
+      text-decoration: underline;
+    }
+    a:hover,
+    a:active {
+      color: $colour-link-hover;
+      outline: none;
+    }
+  }
+}

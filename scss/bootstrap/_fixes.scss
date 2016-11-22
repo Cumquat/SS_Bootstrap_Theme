@@ -1,0 +1,73 @@
+/* Bootstrap silverstripe checkbox fix */
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: 0;
+  position: absolute;
+  top: 0px;
+}
+
+/* Bootstrap navbar rounded border fix */
+.navbar {
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+}
+
+/* Make drop downs hover on Desktop */
+@media (min-width: $screen-sm-min) {
+  .navbar-nav.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Confine login form */
+#MemberLoginForm_LoginForm {
+  @media (min-width: $screen-sm-min) {
+   width: 40%;
+  }
+}
+
+/* Merge Bootstrap and SilverStripe form styles */
+div {
+  .field {
+    @extend .form-group;
+  }
+}
+.middleColumn {
+  .text,
+  .textarea {
+    @extend .form-control;
+  }
+}
+.Actions {
+  .action {
+    @extend .btn;
+    @extend .btn-success;
+  }
+  #ForgotPassword {
+    margin-top: 20px;
+  }
+}
+.optionset {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  .checkbox,
+  .radio {
+    display: inline;
+    position: relative;
+    top: 1px;
+  }
+  .odd,
+  .even {
+    label {
+      padding-left: 7px;
+    }
+  }
+}
+.error.message {
+  @extend .help-block;
+}
+.resetformaction {
+  @extend .btn;
+  @extend .btn-default;
+}

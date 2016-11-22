@@ -1,0 +1,29 @@
+/* Bootstrap */
+@import "bootstrap/variables"; // Overide Bootstraps variables here
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; // Brings in Bootstrap
+// SilverStripe Bootstrap fixes
+@import "bootstrap/fixes"; // SilverStripe Bootstrap fixes
+/* Base */
+@import "base/variables";
+@import "base/global";
+
+/* Typography */
+@import "typography/headings";
+@import "typography/links";
+@import "typography/lists";
+@import "typography/paragraphs";
+@import "typography/tables";
+
+/* Layout */
+@import "layout/header";
+@import "layout/page";
+@import "layout/footer";
+
+/* Pages */
+@import "pages/search-results";
+
+/* Components */
+@import "components/navbar";
+@import "components/page-banner";
+@import "components/sidebar";
+@import "components/breadcrumbs";

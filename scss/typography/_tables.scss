@@ -1,0 +1,9 @@
+/* Tables */
+table {
+  @extend .table;
+  margin-bottom: 0;
+  border: 1px solid $table-border-color;
+  tr:nth-of-type(even) {
+    background-color: $table-bg-accent;
+  }
+}

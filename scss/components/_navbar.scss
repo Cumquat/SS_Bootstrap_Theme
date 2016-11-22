@@ -1,0 +1,77 @@
+/* Desktop */
+.dropdown-link {
+  padding-right: 25px;
+  &:after {
+    position: relative;
+    top: -2px;
+    right: -2px;
+    content: "\e259";
+    font-family: 'Glyphicons Halflings';
+    font-size: 8px;
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+}
+
+/* Desktop hover */
+.dropdown-item {
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Mobile */
+.dropdown-link-mobile {
+  padding: 9px 15px 9px 15px;
+  position: absolute;
+  background-color: #333;
+  cursor: pointer;
+  display: none;
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    display: block;
+  }
+  &:after {
+    color: #fff;
+    content: "\e259";
+    font-family: 'Glyphicons Halflings';
+    font-size: 8px;
+    cursor: pointer;
+  }
+  z-index: 22;
+  right: 0;
+  top: 0;
+}
+
+/* Chevron swap */
+.dropdown-item.open {
+  .dropdown-link {
+    background-color: transparent !important;
+  }
+  .dropdown-link-mobile {
+    &:after {
+      content: "\e260";
+    }
+  }
+}
+
+/* Navbar States */
+.current,
+.section {
+  .dropdown-link, .normal-link {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+.current.dropdown-item.open {
+  .dropdown-link {
+    background-color: #000 !important;
+  }
+}

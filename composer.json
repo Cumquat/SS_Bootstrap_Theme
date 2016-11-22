@@ -1,0 +1,12 @@
+{
+  "name": "liquidcomputing/ss_bootstrap_theme",
+  "description": "Bootstrap theme",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT License",
+  "type": "silverstripe-theme",
+  "homepage": "http://www.liquid-computing.co.uk",
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}
